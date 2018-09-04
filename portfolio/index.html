@@ -8,6 +8,34 @@ Most Recent Revision: August 31, 2018
 
     <head>
         <title>Britton's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+        <style>
+            caption {
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 8px;
+                margin-top: 8px;
+            }
+            table, th, td {
+                border: 1px solid #0d1f2d;
+                border-collapse: collapse;
+                padding: 5px 10px;
+            }
+            table {
+                width: 90%;
+                margin: auto;
+            }
+            tr {
+                height: 30px;
+            }
+            th {
+                background-color: #546a7b;
+                color: #f2eded;
+            }
+            tr:nth-child(odd) {
+                background-color:#e4c3ad;
+            }
+        </style>
     </head>
 
     <body>
@@ -16,20 +44,22 @@ Most Recent Revision: August 31, 2018
                 <h1>Portfolio for Britton Beeny</h1>
             </header>
 
-            <hr/>
-            <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
-            <nav>
+            <nav class="border">
                 <p><a href="projects.html">Projects</a></p>
                 <p><a href="contact.html">Contact Me</a></p>
                 <p><a href="testimonials.html">Testimonials</a></p>
+                <div class="clear-float"></div>
             </nav>
-            <hr/>
+
+
+
 
             <section>
 
-                <article id="about-me">
+                <article class="border" id="about-me">
                     <h2><em>About Me</em></h2>
-                    <img src="images/profile_pic.jpg" alt="A picture of me!" style="width:400px;"/>
+                    <img src="images/profile_pic.jpg" alt="A picture of me!" width="250"/>
+
                     <p>
                         I am an <strong>aspiring software developer</strong>. I am from Flower Mound, Texas,
                         and I have a <strong>degree in physics</strong>.
@@ -39,65 +69,74 @@ Most Recent Revision: August 31, 2018
                         is harder than it seems to get into.
                     </p>
 
-                </article id="past-experiences">
-                    <h2><em>Past Experiences</em></h2>
-                    <img src="images/universe.jpg" alt="The majestic White Sands in New Mexico" style="width:400px;"/>
-
-                    <table border="1" width="50%">
-                        <caption>Employment</caption>
-                        <tr>
-                            <th>Years of Employment</th>
-                            <th>Title</th>
-                            <th>Company</th>
-                        </tr>
-                        <tr>
-                            <td>2016-2018</td>
-                            <td>Research Assistant</td>
-                            <td>Texas A&M University</td>
-                        </tr>
-                        <tr>
-                            <td>2017</td>
-                            <td>Teaching Assistant</td>
-                            <td>Texas A&M University</td>
-                        </tr>
-                        <tr>
-                            <td>2013-2018</td>
-                            <td>Student</td>
-                            <td>Texas A&M University</td>
-                        </tr>
-                    </table>
-
+                <div class="clear-float"></div>
+                </article>
+                <article id="experience">
+                    <h2><em>Experience</em></h2>
+                    <img src="images/universe.jpg" alt="The majestic White Sands in New Mexico" width="400"/>
+                    <div class="right-content">
+                        <table border="1" width="50%">
+                            <caption>Employment</caption>
+                            <thead>
+                                <tr>
+                                    <th>Years of Employment</th>
+                                    <th>Title</th>
+                                    <th>Company</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2016-2018</td>
+                                    <td>Research Assistant</td>
+                                    <td>Texas A&M University</td>
+                                </tr>
+                                <tr>
+                                    <td>2017</td>
+                                    <td>Teaching Assistant</td>
+                                    <td>Texas A&M University</td>
+                                </tr>
+                                <tr>
+                                    <td>2013-2018</td>
+                                    <td>Student</td>
+                                    <td>Texas A&M University</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+                <div class="clear-float"></div>
+                </article>
                 <article id="hobbies">
                     <h2><em>Hobbies</em></h2>
                     <img src="images/controller.png" alt="A video game controller" style="width:200px"/>
-                    <ul>
-                        <li>Sports Teams</li>
-                        <ol>
-                            <li>Texas A&M Aggies Football</li>
-                            <li>Dallas Cowboys</li>
-                            <li>Dallas Mavericks</li>
-                        </ol>
-                        <li>Video Games</li>
-                        <ol>
-                            <li>Fallout</li>
-                            <li>Battlefield</li>
-                            <li>Madden</li>
-                        </ol>
-                        <li>Music</li>
+                    <div class="right-content">
                         <ul>
-                            <li>Rock</li>
-                            <li>Jazz</li>
-                            <li>Outlaw Country</li>
+                            <li>Sports Teams</li>
+                            <ol>
+                                <li>Texas A&M Aggies Football</li>
+                                <li>Dallas Cowboys</li>
+                                <li>Dallas Mavericks</li>
+                            </ol>
+                            <li>Video Games</li>
+                            <ol>
+                                <li>Fallout</li>
+                                <li>Battlefield</li>
+                                <li>Madden</li>
+                            </ol>
+                            <li>Music</li>
+                            <ul>
+                                <li>Rock</li>
+                                <li>Jazz</li>
+                                <li>Outlaw Country</li>
+                            </ul>
+                            <li>Other Activities</li>
+                            <ul>
+                                <li>Shooting</li>
+                                <li>Cooking</li>
+                                <li>Reading</li>
+                            </ul>
                         </ul>
-                        <li>Other Activities</li>
-                        <ul>
-                            <li>Shooting</li>
-                            <li>Cooking</li>
-                            <li>Reading</li>
-                        </ul>
-                    </ul>
-
-
+                    </div>
+                <div class="clear-float"></div>
                 </article>
 
             </section>
