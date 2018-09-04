@@ -1,0 +1,50 @@
+header, footer {
+    background-color: #44ADCD;
+    font-family: 'Pacifico', cursive;
+}
+
+header {
+    height: 100px;
+}
+
+header h1 {
+    padding: 25px;
+}
+
+footer h5 {
+    padding-top: 5px;
+    padding-bottom:5px;
+    margin: 2px
+}
+
+nav a:visited {
+    color: lightpurple;
+}
+nav a {
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.content {
+    background-color: #96B8CD;
+    padding-top: 7px;
+}
+
+#welcome {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+#description {
+    margin-left: 10px;
+    margin-right: 10px;
+}
